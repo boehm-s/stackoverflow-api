@@ -9,8 +9,8 @@ const transactionSchema = new Schema({
       date: Date
     }
   ],
-  _user: { type: Schema.Types.ObjectId, ref: 'User' },
-  _borne: { type: Schema.Types.ObjectId, ref: 'Borne' },
+  _user: { type: Schema.Types.ObjectId, ref: 'users' },
+  _borne: { type: Schema.Types.ObjectId, ref: 'bornes' },
   createdAt: Date,
   updatedAt: Date
 });
